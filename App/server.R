@@ -5,7 +5,7 @@ x = runif(n, -1, 1)
 # Define server logic for app
 server <- function(input, output) {
   # Function to re-sample y-values each time inputs change
-  y = reactive(input$a * x + input$b + rnorm(n))
+  y = reactive(input$a * x + input$b + rnorm(n) / 2)
   
   # Plot of random sample
   output$scatterPlot <- renderPlot({
