@@ -1,5 +1,5 @@
 ---
-title: "Maximum Likelihood in Shiny"
+title: "Two parameter maximum likelihood estimation in Shiny"
 output: github_document
 ---
 

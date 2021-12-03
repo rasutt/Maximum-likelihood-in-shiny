@@ -1,4 +1,4 @@
-Maximum Likelihood in Shiny
+Two parameter maximum likelihood estimation in Shiny
 ================
 
 This is a little web app in Shiny to illustrate maximum likelihood

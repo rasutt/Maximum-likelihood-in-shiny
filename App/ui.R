@@ -10,12 +10,12 @@ ui <- fluidPage(
     # Sidebar panel for inputs
     sidebarPanel(
       # Slider for amplitude
-      sliderInput(inputId = "a", label = "Amplitude:",
+      sliderInput(inputId = "a", label = "Coefficient:",
                   min = min_a, max = max_a, value = 1, step = step, 
                   animate = animationOptions(int = 2000)),
       
       # Slider for the Standard deviation
-      sliderInput(inputId = "sig", label = "Standard deviation:",
+      sliderInput(inputId = "b", label = "Intercept:",
                   min = min_sig, max = max_sig, value = 1.5, step = step, 
                   animate = animationOptions(int = 2000))
     ),
@@ -24,7 +24,7 @@ ui <- fluidPage(
     mainPanel(
       fluidRow(
         splitLayout(
-          cellWidths = c("60%", "40%"), 
+          cellWidths = c("55%", "45%"), 
           # NLL plot
           plotOutput(outputId = "NLLPlot"),
           
